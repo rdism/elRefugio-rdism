@@ -9,20 +9,53 @@ function App() {
   return (
     <>
       <div className="navbar bg-base-100">
-  <div className="flex-1">
-    <a className="btn btn-ghost text-xl">EL REFUGIO</a>
-  </div>
-  <div className="flex-none gap-2">
-    <div className="form-control">
-      <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
+  {/* Logo + Título */}
+  <div className="flex-1 gap-2">
+    <div className="w-8 h-8">
+      <img
+        alt="El refugio Logo"
+        src={favicon} // Asegúrate de importar el favicon
+      />
     </div>
+    <a className="btn btn-ghost text-2xl">EL REFUGIO</a>
+  </div>
+
+  {/* Nuevas Secciones */}
+  <div className="hidden md:flex gap-4">
+    <a  href="#quienes-somos" className=" text-xl btn btn-glass hover:border-b-2 hover:border-neutral-500 pb-1">Quienes somos</a>
+    <a href="#contacto" className="text-xl btn btn-glass">Contacto</a>
+    <a href="#tarifas" className="text-xl btn btn-glass">Tarifas</a>
+  </div>
+
+  {/* Buscador y Dropdown */}
+  <div className="flex-none gap-4">
+    {/* Buscador */}
+    <div className="form-control">
+      {/* <input
+        type="text"
+        placeholder="Search"
+        className="input input-bordered w-24 md:w-auto"
+      /> */}
+    </div>
+
+    {/* Dropdown */}
     <div className="dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn btn-ghost">
-        <div className="w-10 rounded-full">
-          <img
-            alt="El refugio Logo"
-            src={favicon} />
-        </div>
+        {/* Icono de menú hamburguesa */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
       </div>
       <ul
         tabIndex={0}
@@ -30,7 +63,6 @@ function App() {
         <li>
           <a className="justify-between">
             Profile
-            {/* <span className="badge">New</span> */}
           </a>
         </li>
         <li><a>Settings</a></li>
@@ -39,6 +71,7 @@ function App() {
     </div>
   </div>
 </div>
+
 
 <main className="flex-grow">
 <div className="carousel rounded-box w-97">
