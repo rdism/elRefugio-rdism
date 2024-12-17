@@ -1,4 +1,8 @@
 import './App.css';
+import imagen1 from "/src/assets/images/PHOTO-2024-12-07-09-06-34.jpg";
+import imagen2 from "/src/assets/images/PHOTO-2024-12-07-09-07-20.jpg";
+import imagen3 from "/src/assets/images/PHOTO-2024-12-07-09-07-38.jpg";
+import imagen4 from "/src/assets/images/PHOTO-2024-12-07-09-07-49.jpg";
 
 function App() {
   return (
@@ -39,7 +43,7 @@ function App() {
 <div className="carousel rounded-box w-97">
   <div id="slide1" className="carousel-item relative w-full">
     <img
-      src="/src/assets/images/PHOTO-2024-12-07-09-06-34.jpg"
+      src={imagen1}
       className="w-full" />
     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
       <a href="#slide4" className="btn btn-circle">❮</a>
@@ -48,7 +52,7 @@ function App() {
   </div>
   <div id="slide2" className="carousel-item relative w-full">
     <img
-      src="/src/assets/images/PHOTO-2024-12-07-09-07-20.jpg"
+      src={imagen2}
       className="w-full" />
     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
       <a href="#slide1" className="btn btn-circle">❮</a>
@@ -57,7 +61,7 @@ function App() {
   </div>
   <div id="slide3" className="carousel-item relative w-full">
     <img
-      src="/src/assets/images/PHOTO-2024-12-07-09-07-38.jpg"
+      src={imagen3}
       className="w-full" />
     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
       <a href="#slide2" className="btn btn-circle">❮</a>
@@ -66,7 +70,7 @@ function App() {
   </div>
   <div id="slide4" className="carousel-item relative w-full">
     <img
-      src="/src/assets/images/PHOTO-2024-12-07-09-07-49.jpg"
+      src={imagen4}
       className="w-full" />
     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
       <a href="#slide3" className="btn btn-circle">❮</a>
