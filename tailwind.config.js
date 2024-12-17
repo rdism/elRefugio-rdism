@@ -12,6 +12,19 @@ export default {
   ],
   daisyui: {
     themes: [
+      {
+        mitema: {
+          "primary": "#468585",
+          "secondary": "#50b498",
+          "accent": "#9cdba6",
+          "neutral": "#ffffff",
+          "base-100": "#def9c4",
+          "info": "#ff00ff",
+          "success": "#22c55e",
+          "warning": "#facc15",
+          "error": "#ef4444",
+        }
+      },
       "light",
       "dark",
       "cupcake",
