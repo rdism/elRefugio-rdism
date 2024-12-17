@@ -3,6 +3,7 @@ import imagen1 from "/src/assets/images/PHOTO-2024-12-07-09-06-34.jpg";
 import imagen2 from "/src/assets/images/PHOTO-2024-12-07-09-07-20.jpg";
 import imagen3 from "/src/assets/images/PHOTO-2024-12-07-09-07-38.jpg";
 import imagen4 from "/src/assets/images/PHOTO-2024-12-07-09-07-49.jpg";
+import favicon from "/src/assets/images/favicon.png";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <div className="w-10 rounded-full">
           <img
             alt="El refugio Logo"
-            src="favicon.png" />
+            src={favicon} />
         </div>
       </div>
       <ul
