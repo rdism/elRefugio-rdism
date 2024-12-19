@@ -22,7 +22,7 @@ function App() {
 
         {/* Nuevas Secciones */}
         <div className="hidden md:flex gap-4">
-          <a href="#quienes-somos" className=" text-xl btn btn-glass ">Quienes somos</a>
+          <a href="#quienes-somos" className=" text-xl btn btn-glass">Quienes somos</a>
           <a href="#contacto" className="text-xl btn btn-glass">Contacto</a>
           <a href="#tarifas" className="text-xl btn btn-glass">Tarifas</a>
         </div>
@@ -116,11 +116,10 @@ function App() {
         {/* Contenido principal */}
         <div>
           <h1 className="text-2xl font-bold mb-4">Nuestra Ubicación</h1>
-          <div className="map-container mb-12">
+          <div className="map-container relative w-full aspect-video mb-4">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3302.653106481622!2d-66.05236642402969!3d-34.129629473208574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDA3JzQ2LjciUyA2NsKwMDInNTEuOSJX!5e0!3m2!1ses-419!2sar!4v1734467863378!5m2!1ses-419!2sar"
-              width="928"
-              height="300"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2841.8103171927633!2d-66.06285272488051!3d-33.10166217973399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDA2JzA2LjAiUyA2NsKwMDMnMzcuMCJX!5e1!3m2!1ses-419!2sar!4v1734650494315!5m2!1ses-419!2sar"
+              className='absolute top-0 left-0 w-full h-full border-0'
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"

@@ -1,5 +1,5 @@
 #root {
-  max-width: 992px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -8,6 +8,10 @@
 body {
     font-family: 'Philosopher', sans-serif;  
 }
+
+/* .btn {
+  @apply rounded-full;
+} */
 
 .logo {
   height: 6em;
