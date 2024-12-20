@@ -1,11 +1,27 @@
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import imagen1 from "/src/assets/images/PHOTO-2024-12-07-09-06-34.jpg";
 import imagen2 from "/src/assets/images/PHOTO-2024-12-07-09-07-20.jpg";
 import imagen3 from "/src/assets/images/PHOTO-2024-12-07-09-07-38.jpg";
 import imagen4 from "/src/assets/images/PHOTO-2024-12-07-09-07-49.jpg";
 import favicon from "/src/assets/images/favicon.png";
+import { use } from 'react';
 
 function App() {
+  const [theme, setTheme] = useState(() => {
+    // Cargar tema guardado en localStorage o usar el predeterminado 
+    return localStorage.getItem('selectedTheme') || 'aqua';
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('selectedTheme', theme);
+  } , [theme]);
+
+  const handleThemeChange = (event) => {
+    setTheme(event.target.value);
+  };
+
   return (
     <>
       <div className="navbar bg-base-100">
@@ -25,6 +41,40 @@ function App() {
           <a href="#quienes-somos" className=" text-xl btn btn-glass">Quienes somos</a>
           <a href="#contacto" className="text-xl btn btn-glass">Contacto</a>
           <a href="#tarifas" className="text-xl btn btn-glass">Tarifas</a>
+        </div>
+
+        <div className="flex-none gap-4">
+          <select
+            id="theme-selector"
+            value={theme}
+            onChange={handleThemeChange}
+            className="select select-bordered">
+            <option value="mitema">Mi Tema</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+            <option value="cupcake">Cupcake</option>
+            <option value="bumblebee">Bumblebee</option>
+            <option value="emerald">Emerald</option>
+            <option value="corporate">Corporate</option>
+            <option value="synthwave">Synthwave</option>
+            <option value="retro">Retro</option>
+            <option value="cyberpunk">Cyberpunk</option>
+            <option value="valentine">Valentine</option>
+            <option value="halloween">Halloween</option>
+            <option value="garden">Garden</option>
+            <option value="forest">Forest</option>
+            <option value="aqua">Aqua</option>
+            <option value="lofi">Lofi</option>
+            <option value="pastel">Pastel</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="wireframe">Wireframe</option>
+            <option value="black">Black</option>
+            <option value="luxury">Luxury</option>
+            <option value="dracula">Dracula</option>
+            <option value="cmyk">CmYK</option>
+            <option value="autumn">Autumn</option>
+            <option value="business">Business</option>
+          </select>
         </div>
 
         {/* Buscador y Dropdown */}
