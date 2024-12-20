@@ -41,9 +41,7 @@ function App() {
           <a href="#quienes-somos" className=" text-xl btn btn-glass">Quienes somos</a>
           <a href="#contacto" className="text-xl btn btn-glass">Contacto</a>
           <a href="#tarifas" className="text-xl btn btn-glass">Tarifas</a>
-        </div>
-
-        <div className="flex-none gap-4">
+          <div className="flex-none gap-4">
           <select
             id="theme-selector"
             value={theme}
@@ -76,6 +74,8 @@ function App() {
             <option value="business">Business</option>
           </select>
         </div>
+        </div>
+
 
         {/* Buscador y Dropdown */}
         <div className="flex-none gap-4">
